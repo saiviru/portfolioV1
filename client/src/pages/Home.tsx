@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, FileDown, Phone, Code2, Database, Layers, Cpu, Globe } from "lucide-react";
+import { Github, Linkedin, Mail, FileDown, Phone, Code2, Database, Layers, Cpu, Globe, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ThreeBackground from "@/components/ThreeBackground";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
@@ -33,8 +33,8 @@ export default function Home() {
             <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
             <a href="#work" className="hover:text-primary transition-colors">Work</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
-            <a href="/SaiKiran_Boga_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <Button size="sm" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10">
+            <a href="/SaiKiran_Boga_Resume.pdf" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              <Button size="sm" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
                 Resume
               </Button>
             </a>
@@ -181,9 +181,9 @@ export default function Home() {
               </a>
             </div>
 
-            <a href="/SaiKiran_Boga_Resume.pdf" download="SaiKiran_Boga_Resume.pdf">
-              <Button size="lg" className="w-full md:w-auto font-bold gap-2">
-                <FileDown className="w-4 h-4" />
+            <a href="/SaiKiran_Boga_Resume.pdf" download="SaiKiran_Boga_Resume.pdf" className="cursor-pointer group">
+              <Button size="lg" className="w-full md:w-auto font-bold gap-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+                <FileDown className="w-4 h-4 group-hover:animate-bounce" />
                 Download Resume
               </Button>
             </a>
@@ -196,7 +196,20 @@ export default function Home() {
       </section>
 
       <footer className="py-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-        <p>© 2024 Dev Portfolio. Built with React, Tailwind & Three.js.</p>
+        <div className="container mx-auto px-6">
+          <div className="flex justify-center gap-6 mb-4">
+            <a href="https://www.linkedin.com/in/saiviru/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="https://github.com/saiviru/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Github className="w-5 h-5" />
+            </a>
+            <a href="https://www.instagram.com/saiviru" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              <Instagram className="w-5 h-5" />
+            </a>
+          </div>
+          <p>© {new Date().getFullYear()} by Saiviru</p>
+        </div>
       </footer>
     </div>
   );
