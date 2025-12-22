@@ -181,9 +181,9 @@ export default function Home() {
               </a>
             </div>
 
-            <a href="/SaiKiran_Boga_Resume.pdf" download="SaiKiran_Boga_Resume.pdf" className="cursor-pointer">
-              <Button size="lg" className="w-full md:w-auto font-bold gap-2 cursor-pointer">
-                <FileDown className="w-4 h-4" />
+            <a href="/SaiKiran_Boga_Resume.pdf" download="SaiKiran_Boga_Resume.pdf" className="cursor-pointer group">
+              <Button size="lg" className="w-full md:w-auto font-bold gap-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
+                <FileDown className="w-4 h-4 group-hover:animate-bounce" />
                 Download Resume
               </Button>
             </a>
