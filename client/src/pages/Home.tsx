@@ -196,7 +196,7 @@ export default function Home() {
       </section>
 
       <footer className="py-8 border-t border-border/50 text-center text-sm text-muted-foreground">
-        <p>© 2024 Dev Portfolio. Built with React, Tailwind & Three.js.</p>
+        <p>© {new Date().getFullYear()} by Saiviru</p>
       </footer>
     </div>
   );
