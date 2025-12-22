@@ -8,7 +8,9 @@ import ProjectCard from "@/components/ProjectCard";
 // Import generated assets
 import avatarImg from "@assets/generated_images/developer_avatar.png";
 import project1Img from "@assets/generated_images/dashboard_project.png";
-import project2Img from "@assets/generated_images/mobile_app_project.png";
+import project2Img1 from "@assets/generated_images/koovi_1.png";
+import project2Img2 from "@assets/generated_images/koovi_2.png";
+import project2Img3 from "@assets/generated_images/koovi_3.png";
 import project3Img from "@assets/generated_images/webgl_project.png";
 
 export default function Home() {
@@ -19,10 +21,12 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
         <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-          <div className="font-mono text-xl font-bold tracking-tighter">
-            <span className="text-primary">&lt;</span>
-            Dev
-            <span className="text-primary">/&gt;</span>
+          <div className="flex items-center gap-2">
+            <div className="font-mono text-xl font-bold tracking-tighter">
+              <span className="text-primary">&lt;</span>
+              Saiviru
+              <span className="text-primary">/&gt;</span>
+            </div>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
@@ -65,9 +69,9 @@ export default function Home() {
               </div>
 
               <div className="mt-12 flex items-center gap-6 text-muted-foreground">
-                <a href="#" className="hover:text-primary transition-colors"><Github className="w-6 h-6" /></a>
-                <a href="#" className="hover:text-primary transition-colors"><Linkedin className="w-6 h-6" /></a>
-                <a href="#" className="hover:text-primary transition-colors"><Mail className="w-6 h-6" /></a>
+                <a href="https://github.com/saiviru" className="hover:text-primary transition-colors"><Github className="w-6 h-6" /></a>
+                <a href="https://www.linkedin.com/in/saiviru/" className="hover:text-primary transition-colors"><Linkedin className="w-6 h-6" /></a>
+                <a href="mailto:saikiran@saiviru.in" className="hover:text-primary transition-colors"><Mail className="w-6 h-6" /></a>
               </div>
             </motion.div>
 
@@ -77,8 +81,11 @@ export default function Home() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="flex justify-center md:justify-end"
             >
-              <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-[0_0_40px_-10px_var(--primary)] ring-4 ring-background/50">
-                 <img src={avatarImg} alt="Developer Avatar" className="w-full h-full object-cover" />
+              <div className="text-center">
+                <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-[0_0_40px_-10px_var(--primary)] ring-4 ring-background/50 mx-auto">
+                   <img src={avatarImg} alt="Developer Avatar" className="w-full h-full object-cover" />
+                </div>
+                <h2 className="mt-4 text-2xl font-bold text-foreground">Sai Kiran Boga</h2>
               </div>
             </motion.div>
           </div>
@@ -135,10 +142,11 @@ export default function Home() {
               tags={["React", "D3.js", "TypeScript"]}
             />
             <ProjectCard 
-              title="E-Commerce Mobile App" 
-              description="Cross-platform mobile application for a luxury fashion brand."
-              image={project2Img}
-              tags={["React Native", "Redux", "Node.js"]}
+              title="Koovi Mobile App" 
+              description="Cross-platform mobile application for personal you."
+              image={[project2Img1, project2Img2, project2Img3]}
+              tags={["React Native", "Redux", "Firebase"]}
+              link="https://koovi.app/"
             />
             <ProjectCard 
               title="WebGL Visualizer" 
@@ -160,20 +168,22 @@ export default function Home() {
             </p>
             
             <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
-              <a href="mailto:hello@devportfolio.com" className="flex items-center justify-center gap-3 px-6 py-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors border border-border">
+              <a href="mailto:saikiran@saiviru.in" className="flex items-center justify-center gap-3 px-6 py-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors border border-border">
                 <Mail className="w-5 h-5 text-primary" />
-                <span>hello@devportfolio.com</span>
+                <span>saikiran@saiviru.in</span>
               </a>
-              <a href="tel:+1234567890" className="flex items-center justify-center gap-3 px-6 py-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors border border-border">
+              <a href="tel:+917416343790" className="flex items-center justify-center gap-3 px-6 py-4 bg-muted/50 rounded-lg hover:bg-muted transition-colors border border-border">
                 <Phone className="w-5 h-5 text-secondary" />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 7416 343 790</span>
               </a>
             </div>
 
-            <Button size="lg" className="w-full md:w-auto font-bold gap-2">
-              <FileDown className="w-4 h-4" />
-              Download Resume
-            </Button>
+            <a href="/SaiKiran_Boga_Resume.pdf" download="SaiKiran_Boga_Resume.pdf">
+              <Button size="lg" className="w-full md:w-auto font-bold gap-2">
+                <FileDown className="w-4 h-4" />
+                Download Resume
+              </Button>
+            </a>
           </div>
         </div>
         

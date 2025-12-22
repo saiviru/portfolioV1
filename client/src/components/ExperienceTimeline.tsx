@@ -14,26 +14,34 @@ const experiences: Experience[] = [
   {
     id: 1,
     role: "Senior Software Engineer",
-    company: "TechNova Solutions",
-    period: "2022 - Present",
-    description: "Leading the frontend team in rebuilding the core product dashboard. Improved performance by 40% and implemented a new design system.",
+    company: "Qentelli Solutions",
+    period: "2024, June - Present",
+    description: "Worked closely with the Southwest Airlines client to map and refine user stories, translate business requirements into technical solutions, and deliver high-quality, production-ready code while strictly following best coding standards, performance optimization practices, and security guidelines. Also, worked on Qentelli internal projects to develop AR based application based on react + ThreeJS",
     tech: ["React", "TypeScript", "Next.js", "Three.js"]
   },
   {
     id: 2,
     role: "Software Developer",
-    company: "Quantum Systems",
-    period: "2019 - 2022",
-    description: "Developed interactive data visualization tools for financial clients. Collaborated with UX designers to create intuitive interfaces.",
-    tech: ["Vue.js", "D3.js", "Node.js", "AWS"]
+    company: "Sagarsoft (India) Limited",
+    period: "2023, June - 2024, May",
+    description: "Worked with Walmart on their internal Stride project, delivering high-quality code on time, effectively managing project timelines, and prioritizing tasks to ensure successful outcomes.\nMentored junior developers, providing guidance on best practices and coding techniques for improved productivity. Conducted webinars on Three.js, AR, and VR.\nLed a team of two in developing and launching the MVP of the Sagar Cements Android application, efficiently managing the entire project lifecycle from initial planning to deployment, and ensuring timely delivery and high-quality standards.",
+    tech: ["JavaScript", "React", "React Native", "AWS", "Nginx", "Node.js", "Three.js"]
   },
   {
     id: 3,
-    role: "Junior Developer",
-    company: "Creative Web Agency",
-    period: "2017 - 2019",
-    description: "Built responsive websites for various clients. Maintained legacy codebases and implemented new features using modern JavaScript.",
-    tech: ["JavaScript", "HTML/CSS", "jQuery", "PHP"]
+    role: "Accessibility Developer",
+    company: "Deque Systems, Inc",
+    period: "2022, April - 2023, April",
+    description: "Specialized in ReactJS and Accessibility. Expertise in delivering exceptional user experiences while adhering to WCAG guidelines. Recognized for showing a can-do attitude and delivering output.\nStrong understanding and application of accessibility on Deque products, to be accessible to everyone by using HTML, JavaScript, CSS, AJAX, and Jenkins\nContributed to Axe for Designers, a Deque product, by managing frontend and backend development, as well as overseeing the deployment process for smooth and efficient operations.",
+    tech: ["ReactJS", "Node.js", "TypeScript", "Accessibility", "MongoDB", "AWS", "Cognito"]
+  },
+  {
+    id: 4,
+    role: "FrontEnd Developer",
+    company: "PlugXR Inc.",
+    period: "2019, October - 2022, March",
+    description: "Managed development of WebAR module and was responsible for implementing market-ready features, using technologies including ReactJS, Redux, and ThreeJS, a Javascript 3D framework, and HTML, CSS, AJAX.\nMulti-tasked across multiple functions including deployment using Jenkins and roles to generate project results and meet deadlines and organizational expectations.\nIntegral part of team in setting development standards and scheduling sprints and product releases for the team in setting development standards and scheduling sprints and product releases for the product to stay ahead in the market.",
+    tech: ["ReactJS", "Node.js", "TypeScript", "Accessibility", "MongoDB", "AWS", "Cognito"]
   }
 ];
 
@@ -65,9 +73,17 @@ export default function ExperienceTimeline() {
             {exp.company}
           </div>
           
-          <p className="text-muted-foreground mb-4 leading-relaxed">
-            {exp.description}
-          </p>
+          <div className="text-muted-foreground mb-4 leading-relaxed">
+            {exp.description.includes('\n') ? (
+              <ul className="list-disc list-inside space-y-1">
+                {exp.description.split('\n').map((line, idx) => (
+                  <li key={idx}>{line.trim()}</li>
+                ))}
+              </ul>
+            ) : (
+              <p>{exp.description}</p>
+            )}
+          </div>
           
           <div className="flex flex-wrap gap-2">
             {exp.tech.map((t) => (
