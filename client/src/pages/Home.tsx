@@ -33,9 +33,11 @@ export default function Home() {
             <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
             <a href="#work" className="hover:text-primary transition-colors">Work</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
-            <Button size="sm" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10">
-              Resume
-            </Button>
+            <a href="/SaiKiran_Boga_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <Button size="sm" variant="outline" className="border-primary/50 text-primary hover:bg-primary/10">
+                Resume
+              </Button>
+            </a>
           </div>
         </div>
       </nav>
@@ -136,10 +138,11 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard 
-              title="Analytics Dashboard" 
-              description="Real-time data visualization platform with customizable widgets and dark mode."
+              title="OrderIt Web App" 
+              description="Real-time order app for restaurants"
               image={project1Img}
-              tags={["React", "D3.js", "TypeScript"]}
+              tags={["React", "Node", "Mongo"]}
+              repo="https://github.com/saiviru/OrderIt-FrontEnd"
             />
             <ProjectCard 
               title="Koovi Mobile App" 
@@ -164,7 +167,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center bg-card/50 backdrop-blur-xl border border-border p-12 rounded-2xl shadow-2xl">
             <h2 className="text-4xl font-bold mb-6">Let's work together</h2>
             <p className="text-muted-foreground mb-8 text-lg">
-              I'm currently available for freelance projects and open to new full-time opportunities.
+              I'm open to new full-time opportunities.
             </p>
             
             <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
