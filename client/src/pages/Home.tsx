@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, FileDown, Phone, Code2, Database, Layers, Cpu, Globe, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import ThreeBackground from "@/components/ThreeBackground";
 import ExperienceTimeline from "@/components/ExperienceTimeline";
 import ProjectCard from "@/components/ProjectCard";
@@ -38,6 +39,10 @@ export default function Home() {
                 Resume
               </Button>
             </a>
+            <ThemeToggle />
+          </div>
+          <div className="md:hidden">
+            <ThemeToggle />
           </div>
         </div>
       </nav>
