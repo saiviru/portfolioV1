@@ -62,12 +62,16 @@ export default function Home() {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-primary text-background hover:bg-primary/90 font-bold">
-                  View My Work
-                </Button>
-                <Button size="lg" variant="outline" className="border-muted-foreground/30 hover:bg-muted/50">
-                  Contact Me
-                </Button>
+                <a href="#work" className="cursor-pointer">
+                  <Button size="lg" className="bg-primary text-background hover:bg-primary/90 hover:scale-105 transition-all duration-200 font-bold cursor-pointer">
+                    View My Work
+                  </Button>
+                </a>
+                <a href="#contact" className="cursor-pointer">
+                  <Button size="lg" variant="outline" className="border-muted-foreground/30 hover:bg-muted/50 hover:scale-105 hover:border-primary transition-all duration-200 cursor-pointer">
+                    Contact Me
+                  </Button>
+                </a>
               </div>
 
               <div className="mt-12 flex items-center gap-6 text-muted-foreground">
