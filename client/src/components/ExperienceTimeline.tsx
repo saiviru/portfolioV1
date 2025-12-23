@@ -12,14 +12,6 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    id: 1,
-    role: "Senior Software Engineer",
-    company: "Qentelli Solutions",
-    period: "2024, June - Present",
-    description: "Worked closely with the Southwest Airlines client to map and refine user stories, translate business requirements into technical solutions, and deliver high-quality, production-ready code while strictly following best coding standards, performance optimization practices, and security guidelines. Also, worked on Qentelli internal projects to develop AR based application based on react + ThreeJS",
-    tech: ["React", "TypeScript", "Next.js", "Three.js"]
-  },
-  {
     id: 2,
     role: "Software Developer",
     company: "Sagarsoft (India) Limited",

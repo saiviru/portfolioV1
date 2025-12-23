@@ -107,13 +107,14 @@ export default function Home() {
       <section className="py-20 border-y border-border/50 bg-muted/20">
         <div className="container mx-auto px-6">
           <h2 className="text-center text-sm font-mono text-muted-foreground mb-12 uppercase tracking-widest">Technologies & Tools</h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 justify-items-center opacity-80">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 justify-items-center opacity-80">
              {/* Simple Icons/Text Placeholders */}
              <div className="flex flex-col items-center gap-2"><Code2 className="w-8 h-8 text-primary" /><span className="font-mono text-sm">React</span></div>
              <div className="flex flex-col items-center gap-2"><Code2 className="w-8 h-8 text-secondary" /><span className="font-mono text-sm">TypeScript</span></div>
              <div className="flex flex-col items-center gap-2"><Layers className="w-8 h-8 text-primary" /><span className="font-mono text-sm">Three.js</span></div>
              <div className="flex flex-col items-center gap-2"><Database className="w-8 h-8 text-secondary" /><span className="font-mono text-sm">Node.js</span></div>
              <div className="flex flex-col items-center gap-2"><Globe className="w-8 h-8 text-primary" /><span className="font-mono text-sm">Next.js</span></div>
+             <div className="flex flex-col items-center gap-2"><Cpu className="w-8 h-8 text-secondary" /><span className="font-mono text-sm">Python</span></div>
           </div>
         </div>
       </section>
