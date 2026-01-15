@@ -34,7 +34,7 @@ export default function Home() {
             <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
             <a href="#work" className="hover:text-primary transition-colors">Work</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
-            <a href="/SaiKiran_Boga_Resume.pdf" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+            <a href="/New_SaiKiran_Resume.pdf" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               <Button size="sm" variant="outline" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
                 Resume
               </Button>
@@ -190,7 +190,7 @@ export default function Home() {
               </a>
             </div>
 
-            <a href="/SaiKiran_Boga_Resume.pdf" download="SaiKiran_Boga_Resume.pdf" className="cursor-pointer group">
+            <a href="/New_SaiKiran_Resume.pdf" download="SaiKiran_Boga_Resume.pdf" className="cursor-pointer group">
               <Button size="lg" className="w-full md:w-auto font-bold gap-2 cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors">
                 <FileDown className="w-4 h-4 group-hover:animate-bounce" />
                 Download Resume
